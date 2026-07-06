@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Dashboard</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.dashboard {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 20px;
+}
+
+.card {
+  background: skyblue;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+  /* Flexbox for centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <h1>📱 My Dashboard</h1>
+
+    <div class="grid">
+      <div class="card">👤<br>Profile</div>
+      <div class="card">💳<br>Wallet</div>
+      <div class="card">⚙️<br>Settings</div>
+      <div class="card">💬<br>Messages</div>
+      <div class="card">🖼️<br>Gallery</div>
+      <div class="card">🚪<br>Logout</div>
+    </div>
+  </div>
+
+</body>
+</html>
